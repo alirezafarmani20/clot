@@ -7,7 +7,7 @@ class AppTheme {
     scaffoldBackgroundColor: AppColors.bgLight1,
     textTheme: TextTheme(
       bodyLarge: TextStyle(
-        color: AppColorDarck.bgDark1,
+        color: AppColors.appBlack,
         fontSize: 22,
         fontWeight: FontWeight.bold 
       ),

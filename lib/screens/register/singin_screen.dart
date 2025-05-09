@@ -1,4 +1,3 @@
-import 'package:clot/core/theme/colors.dart';
 import 'package:flutter/material.dart';
 
 class SinginScreen extends StatefulWidget {
@@ -18,7 +17,7 @@ class _SinginScreenState extends State<SinginScreen> {
           children: [
             Text(
               "hello this is sing in page",
-              style: TextStyle(color: AppColors.appBlack, fontSize: 30),
+              style: Theme.of(context).textTheme.bodyMedium,
             ),
           ],
         ),
