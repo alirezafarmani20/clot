@@ -1,4 +1,5 @@
-import 'package:flutter/widgets.dart';
+import 'package:clot/core/theme/colors.dart';
+import 'package:flutter/material.dart';
 
 class SinginScreen extends StatefulWidget {
   const SinginScreen({super.key});
@@ -10,6 +11,18 @@ class SinginScreen extends StatefulWidget {
 class _SinginScreenState extends State<SinginScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Scaffold(
+        //appBar: AppBar(),
+        body: Column(
+          children: [
+            Text(
+              "hello this is sing in page",
+              style: TextStyle(color: AppColors.appBlack, fontSize: 30),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
