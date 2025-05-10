@@ -21,7 +21,7 @@ class _SinginScreenState extends State<SinginScreen> {
         body: Padding(
           padding: const EdgeInsets.all(14),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 70),
@@ -115,14 +115,13 @@ class _SinginScreenState extends State<SinginScreen> {
                           children: [
                             Image(
                               image: AssetImage("lib/assets/images/apple.png"),
-                              
                             ),
-                            SizedBox(width: MediaQuery.of(context).size.width /8,),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 8,
+                            ),
                             Text(
                               "Continue With Apple",
-                              style: Theme.of(
-                                context,
-                              ).textTheme.bodyMedium
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -137,14 +136,13 @@ class _SinginScreenState extends State<SinginScreen> {
                           children: [
                             Image(
                               image: AssetImage("lib/assets/images/google.png"),
-                              
                             ),
-                            SizedBox(width: MediaQuery.of(context).size.width /8,),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 8,
+                            ),
                             Text(
                               "Continue With Google",
-                              style: Theme.of(
-                                context,
-                              ).textTheme.bodyMedium
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),
@@ -158,15 +156,16 @@ class _SinginScreenState extends State<SinginScreen> {
                         child: Row(
                           children: [
                             Image(
-                              image: AssetImage("lib/assets/images/facebook.png"),
-                              
+                              image: AssetImage(
+                                "lib/assets/images/facebook.png",
+                              ),
                             ),
-                            SizedBox(width: MediaQuery.of(context).size.width /8,),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width / 8,
+                            ),
                             Text(
                               "Continue With Facebook",
-                              style: Theme.of(
-                                context,
-                              ).textTheme.bodyMedium
+                              style: Theme.of(context).textTheme.bodyMedium,
                             ),
                           ],
                         ),

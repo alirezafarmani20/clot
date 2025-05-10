@@ -33,9 +33,23 @@ class AppTheme {
         ),
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.primary,
+        textStyle: TextStyle(
+          color: AppColors.bgLight1,
+        )
+      )
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.bgLight1,
+    ),
+    iconTheme: IconThemeData(
+      color: AppColors.appBlack
+    )
   );
   static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: AppColorDarck.bgDark2,
+    scaffoldBackgroundColor: AppColorDarck.bgDark1,
     textTheme: TextTheme(
       bodyLarge: TextStyle(
         color: AppColorDarck.white100,
@@ -64,6 +78,20 @@ class AppTheme {
         ),
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColors.primary,
+        textStyle: TextStyle(
+          color: AppColors.bgLight1,
+        )
+      )
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColorDarck.bgDark1
+    ),
+    iconTheme: IconThemeData(
+      color: AppColorDarck.white100
+    )
   );
 }
 
