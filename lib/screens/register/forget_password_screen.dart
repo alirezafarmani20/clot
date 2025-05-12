@@ -1,5 +1,6 @@
 import 'package:clot/core/theme/colors.dart';
 import 'package:clot/screens/register/create_account_screen.dart';
+import 'package:clot/screens/register/send_email_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -66,6 +67,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               child: ElevatedButton(
                 onPressed: () {
                  //its will send an email to restare password
+                 Get.to(()=> SendEmailScreen());
                 },
                 child: Text(
                   "Continue",
