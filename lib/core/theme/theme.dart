@@ -46,7 +46,7 @@ class AppTheme {
     ),
     iconTheme: IconThemeData(
       color: AppColors.appBlack
-    )
+    ) 
   );
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: AppColorDarck.bgDark1,

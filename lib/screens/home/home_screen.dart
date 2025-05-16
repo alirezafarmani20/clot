@@ -1,4 +1,5 @@
 import 'package:clot/widgets/drop_down_menu_wedget.dart';
+import 'package:clot/widgets/search_input_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -36,6 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
+              SizedBox(height: 20,),
+              // search input
+              SearchInputWidget()
             ],
           ),
         ),
