@@ -1,5 +1,6 @@
 import 'package:clot/core/theme/colors.dart';
 import 'package:clot/screens/register/create_account_screen.dart';
+import 'package:clot/screens/register/tell_about_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -69,6 +70,7 @@ class _SinginScreenState extends State<SinginScreen> {
                                 content: Text("Sign In Successful"),
                               ),
                             );
+                            Get.to(()=> TellAboutScreen());
                           }
                         },
                         style: ElevatedButton.styleFrom(
