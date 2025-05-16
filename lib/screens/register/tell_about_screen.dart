@@ -1,3 +1,4 @@
+import 'package:clot/core/theme/colors.dart';
 import 'package:clot/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,17 @@ class TellAboutScreen extends StatefulWidget {
 
 class _TellAboutScreenState extends State<TellAboutScreen> {
   String? _selectedAge;
+  int _selectedButton = 0;
+  Color _selectedButoonColor = AppColors.primary;
   final List<String> _ageRange = ['18-24', '25-34', '35-44', '45-54', '55+'];
+
+  //creating a function for 
+  void _cgangeButtonColor() {
+    setState(() {
+      // set data
+    });
+  }
+  
 
   @override
   Widget build(BuildContext context) {
