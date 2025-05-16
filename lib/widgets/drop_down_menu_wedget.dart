@@ -1,3 +1,4 @@
+import 'package:clot/core/theme/colors.dart';
 import 'package:clot/screens/home/home_screen.dart';
 import 'package:clot/screens/notifications/notifications_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,13 +20,18 @@ class _DropDownMenuWedgetState extends State<DropDownMenuWedget> {
   };
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 72,
-      height: 40,
+    // ignore: avoid_unnecessary_containers
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+        color: AppColors.bgLight2
+      ),
       child: DropdownButton(
+        alignment: Alignment.center,
         hint: Text("pages"),
         style: Theme.of(context).textTheme.bodyMedium,
         value: _selectedPage,
+        underline: Container(height: 0,),
         items:
             pages.keys.map((String pageName) {
               return DropdownMenuItem(value: pageName, child: Text(pageName));

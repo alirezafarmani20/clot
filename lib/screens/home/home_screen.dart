@@ -24,13 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Image(image: AssetImage("lib/assets/images/user.png")),
                   // creating dropdownmenu
-                  SizedBox(width: 72, height: 40, child: DropDownMenuWedget()),
+                  SizedBox(width: 140, height: 40, child: DropDownMenuWedget()),
                   SizedBox(
                     child: TextButton(
                       onPressed: () {},
-                      style: TextButton.styleFrom(
-                        shape: CircleBorder()
-                      ),
+                      style: TextButton.styleFrom(shape: CircleBorder()),
                       child: Image(
                         image: AssetImage("lib/assets/icons/shop.png"),
                       ),
